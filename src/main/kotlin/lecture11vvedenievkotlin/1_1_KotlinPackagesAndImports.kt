@@ -7,7 +7,7 @@ val any1: Any
         TODO()
     }
 
-val any2: Any = TODO()
+//val any2: Any = TODO()
 
 val pakageName: String = object{}.javaClass.`package`.name
 
@@ -17,23 +17,12 @@ fun main() {
     ByeJava()
 }
 
-
-
 fun printMessage() {
     val funcName = object{}.javaClass.enclosingMethod.name
     println("Hello Again Kotlin. You have package-level function full-named: $pakageName.$funcName()")
 }
 
 class HelloAgainKotlin {
-
-    val a: Any
-        get() {
-            TODO()
-        }
-
-    val b: Any = TODO()
-
-    val c: Any
 
     fun goKotlin() {
         println("this.javaClass.name = ${this.javaClass.name}")
